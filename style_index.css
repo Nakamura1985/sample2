@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+body {
+  margin: auto;
+  width: 1020px;
+}
+
+header {
+  margin: 0;
+  padding: 0 16px;
+  background: #333;
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  height: 80px;
+}
+
+h1 {
+  margin: auto 0;
+  font-size: 36px;
+}
+
+.mypage {
+  display: flex;
+  height: 24px;
+  margin: auto 0;
+  gap: 16px;
+}
+
+.mypage > a {
+  all: unset;
+  padding: 0 16px;
+  background: gray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mypage > a:hover {
+  opacity: .8;
+}
+
+#new {
+  background: orange;
+}
+
+.head {
+  display: flex;
+  margin: 32px 16px;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.news {
+  box-shadow: 0 0 4px gray;
+  width: 100%;
+  border-radius: 4px;
+  height: 200px;
+}
+
+#news-title {
+  margin: 8px 0 0;
+  padding: 0 8px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 32px;
+  list-style: none;
+  height: 168px;
+  overflow: scroll;
+}
+
+li {
+  box-shadow: 2px 2px 2px gray;
+  margin-top: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  font-size: 12px;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+.trainer {
+  margin: 0;
+  height: 200px;
+  width: 100%;
+}
+
+.trainer-title {
+  background: linear-gradient(-10deg, orange 0%, #fff 100%);
+  margin: 8px 0;
+  padding: 0 8px 0;
+  border-radius: 4px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  margin: 0;
+  background: linear-gradient(-10deg, gray 0%, lightgray 100%);
+  width: 100%;
+  border-radius: 50%;
+}
+
+#name {
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+#text {
+  padding: 0 16px;
+  font-size: 14px
+}
+
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+  min-width: 680px;
+}
+
+.lesson > a {
+  all: unset;
+  width: 160px;
+  height: 200px;
+  background: linear-gradient(-30deg, skyblue 0%, pink 100%);
+  border-radius: 8px;
+  color: white;
+  box-shadow: 2px 2px 2px gray;
+  line-height: 200px;
+}
+
+.lesson p {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+.lesson > a:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.sns {
+  margin: 16px;
+}
+
+.sns a {
+  all: unset;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px gray;
+  cursor: pointer;
+  color: #444;
+}
+
+.sns a:hover {
+  opacity: .8;
+}
+
+.pop {
+  background: white;
+  width: 300px;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px gray;
+  position: fixed;
+  right: 32px;
+  bottom: 16px;
+  display: flex;
+  animation: popup 5s forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    transform: none;
+    opacity: 1;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+.loading {
+  width: 6px;
+  height: 6px;
+  margin: 12px;
+  border-top: 4px solid #00ffff;
+  border-right: 4px solid #00ffff7c;
+  border-bottom: 4px solid #00ffff46;
+  border-left: 4px solid #00ffff17;
+  border-radius: 50%;
+  animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.comment {
+  margin: 0;
+  padding: 6px 4px;
+}
+
+footer {
+  background: #333;
+  margin: 0;
+  color: white;
+  padding: 0 8px;
+}
+
+footer > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 0 0;
+}
+
+footer > a:hover {
+  opacity: .8;
+}
+
+#help {
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  text-align: right;
+  margin: 0;
+}
