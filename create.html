@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample css HP</title>
+  <link rel="stylesheet" href="style_create.css">
+</head>
+<body>
+  <header>
+    <h1>Sports GYM</h1>
+  </header>
+
+  <section class="input">
+    <form id="name_form">
+      <div id="family_name">
+        <p>姓</p>
+        <input type="text" placeholder="例）山田" id="family-name-kanji">
+      </div>
+      <div id="first_name">
+        <p>名</p>
+        <input type="text" placeholder="例）太郎" id="first-name-kanji">
+      </div>
+      <div>
+        <p>セイ</p>
+        <input type="text" placeholder="例）ヤマダ">
+      </div>
+      <div>
+        <p>メイ</p>
+        <input type="text" placeholder="例）タロウ">
+      </div>
+    </form>
+    <form class="nickname">
+      <div class="nickname_note">
+        <p>ニックネーム</p>
+        <p id="note">（16文字以内）</p>
+      </div>
+      <input type="text">
+    </form>
+    <div class="birthday">生年月日</div>
+      <select id="year">
+      </select>
+      <select id="month">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+      <select id="day">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+    <form>
+      <div class="tel">
+        <p>連絡先</p>
+        <p id="note">（ハイフン不要）</p>
+      </div>
+      <input type="text" placeholder="07012341234">
+    </form>
+    <form class="mail">
+      <p>メール</p>
+      <input type="text" placeholder="xxx-yyy@gmail.com">
+    </form>
+    <form class="password">
+      <div class="pass">
+        <p>パスワード</p>
+        <p id="note">（8〜16文字）</p>
+      </div>
+      <input type="text">
+      <p>再入力</p>
+      <input type="text">
+    </form>
+  </section>
+    
+  <section class="send">
+    <button id="open">確認</button>
+  </section>
+
+  <div class="overlay">
+    <nav>
+      <ul>
+        <li>姓：</li>
+        <li>名：</li>
+        <li>セイ：</li>
+        <li>メイ：</li>
+        <li>ニックネーム：</li>
+        <li>生年月日：</li>
+        <li>連絡先：</li>
+        <li>メール：</li>
+        <li>パスワード：</li>
+      </ul>
+      <div>
+        <button class="material-icons" id="close">戻る</button>
+        <button class="material-icons" id="register">登録</button>
+      </div>
+    </nav>
+  </div>
+
+  <footer>
+    <h2>Sports GYM</h2>
+  </footer>
+
+  <script src="create.js"></script>
+</body>
+</html>
