@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+body {
+  margin: auto;
+  width: 1020px;
+}
+
+header {
+  margin: 0;
+  padding: 0 16px;
+  background: #333;
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  height: 80px;
+}
+
+h1 {
+  margin: auto 0;
+  font-size: 36px;
+}
+
+
+/* 入力フォーム ここから */
+
+.input {
+  margin: 32px auto;
+  width: 400px;
+}
+
+#name_form p {
+  margin: 0;
+}
+
+input {
+  width: 400px;
+  margin: 8px 24px;
+}
+
+.nickname_note {
+  display: flex;
+}
+
+.nickname p {
+  margin: 0;
+}
+
+#note {
+  color: red;
+  font-size: 12px;
+  line-height:24px;
+}
+
+select {
+  margin: 8px 24px;
+  width: 64px;
+  text-align: center;
+}
+
+.tel {
+  display: flex;
+}
+
+.tel p {
+  margin: 0;
+}
+
+.mail p {
+  margin: 0;
+}
+
+.password p {
+  margin: 0;
+}
+
+.pass {
+  display: flex;
+}
+
+.send {
+  width: 300px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.send button {
+  all: unset;
+  background: rgb(127, 213, 254);
+  margin: 0 auto;
+  padding: 16px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px gray;
+  color: darkblue;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+/* 入力フォーム ここまで */
+
+/* 確認画面 ここから */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(255, 255,255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay #close {
+  all: unset;
+  background: lightgray;
+  margin: 0 auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
+}
+
+.overlay #register {
+  all: unset;
+  background: orange;
+  margin: 0 auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
+}
+
+#close:hover,
+#register:hover {
+  opacity: .8;
+}
+
+.overlay ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  text-align: right;
+  width: 400px;
+  padding-bottom: 8px;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sp-menu #open.heie {
+  display: none;
+}
+
+/* 確認画面 ここまで */
+
+footer {
+  background: #333;
+  margin: 0;
+  color: white;
+  padding: 0 8px;
+}
+
+footer > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 0 0;
+}
+
+footer > a:hover {
+  opacity: .8;
+}
+
+#help {
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  text-align: right;
+  margin: 0;
+} 
